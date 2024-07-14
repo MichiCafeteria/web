@@ -1,0 +1,824 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Dancing+Script:wght@400..700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0%;
+    box-sizing:border-box;
+    /* border: 1px solid black; */
+}
+
+/* HEADER */
+
+header {
+
+    background-image: url(../IMG/decoracion/fondo_cafegatos.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    
+
+}
+
+/* Barra NAV */
+
+
+nav {
+    background-color: rgb(197, 135, 146);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: end;
+    background-image: url("../IMG/decoracion/logo_michicafe.webp");
+    background-repeat: no-repeat;
+    background-position: 2%;
+    height: 75px;
+    font-family: 'DM Serif Text';
+    font-size: 18px;
+
+   
+    position: sticky;
+    top: 0;
+}
+
+
+nav a {
+    text-decoration: none;
+    color: #543070;
+}
+
+a:hover {
+    background-color: rgba(214, 156, 166, 0.815);
+    padding: 1%;
+}
+
+.actual {
+    background-color: rgb(121, 71, 80);
+    color: beige;
+    padding: 1%;
+}
+
+
+/* ------ */
+h1 {
+    text-align: center;
+    margin-top: 10%;
+    padding: 1%;
+    font-family: 'Dancing Script';
+    font-size: 55px;
+    background-color: rgba(235, 235, 208, 0.774);
+
+
+}
+
+
+
+h2 {
+    font-family: 'Dancing Script';
+    font-size: 40px;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 5%;
+}
+
+h3 {
+    font-family: 'Dancing Script';
+    font-size: 35px;
+    padding: 2%;
+
+}
+
+p {
+    font-family: 'DM Serif Text';
+    font-size: 20px;
+    text-align: center;
+    padding: 5px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+/* MAINS */
+
+main {
+    background-color: rgb(245, 207, 213);
+    background-size: cover;
+
+}
+
+p {
+    font-family: 'DM Serif Text';
+    font-size: 20px;
+    text-align: center;
+    padding: 5px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+
+/* CONOCENOS */
+
+.titulo {
+    background-image: url(../IMG/decoracion/deco_onda.webp);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    height: 200px;
+}
+
+.img-y-texto{
+    padding-left: 5%;
+    display: flex;
+    align-items: center;
+}
+
+.texto-imganen{
+    display: flex;
+    padding-right: 5%;
+    padding-top: 5%;
+    align-items: center;
+}
+
+.img-nosotros{
+    border-style: double;
+    margin-bottom: 5%;
+    box-shadow: 2px 2px 14px rgba(0, 0, 0, 3.5);
+}
+
+/* GALERIA INDEX */
+  .parte_galeria {
+
+    background-image: url(../IMG/decoracion/cabeza_gato.webp);
+    background-blend-mode: exclusion;
+    background-color: rgb(245, 207, 213);
+    background-repeat: repeat;
+    height: 500px;
+   
+} 
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  
+}
+
+.slideshow-container img {
+    margin-left: 30%;
+    border-radius: 10%;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: rgb(41, 39, 39);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+ 
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 7px 320px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* GALERIA HTML */
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    background-image: url(../IMG/decoracion/cabeza_gato.webp);
+    background-blend-mode: exclusion;
+    background-color: rgb(245, 207, 213);
+    background-repeat: repeat;
+    padding-bottom: 5%;
+}
+
+div img {
+    border-radius: 10%;
+}
+
+
+.div1 {
+    grid-area: 1 / 1 / 2 / 2;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 5%;
+}
+
+
+.div2 {
+    grid-area: 1 / 2 / 2 / 3;
+    display: flex;
+    justify-content: center;
+    padding-top: 5%;
+}
+
+
+
+.div3 {
+    grid-area: 1 / 3 / 2 / 4;
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 5%;
+}
+
+
+.div4 {
+    grid-area: 2 / 1 / 3 / 2;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 5%;
+}
+
+.div5 {
+    grid-area: 2 / 2 / 3 / 3;
+    display: flex;
+    justify-content: center;
+    padding-top: 5%;
+}
+
+
+.div6 {
+    grid-area: 2 / 3 / 3 / 4;
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 5%;
+}
+
+
+.div7 {
+    grid-area: 3 / 1 / 4 / 2;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 5%;
+}
+
+
+
+.div8 {
+    grid-area: 3 / 2 / 4 / 3;
+    display: flex;
+    justify-content: center;
+    padding-top: 5%;
+}
+
+.div9 {
+    grid-area: 3 / 3 / 4 / 4;
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 5%;
+}
+
+
+/*  PRODUCTOS INDEX*/
+
+.sec-productos{
+    margin-top: 5%;
+padding-left: 22%;
+background-image: url(../IMG/decoracion/taza_de_fondo.webp);
+background-repeat:space;
+}
+
+.sec-productos img{
+    margin-bottom: 5%;
+}
+
+.myButton {
+	box-shadow: 3px 4px 0px 0px #d7c6e3;
+	background:linear-gradient(to bottom, #c7afdb 5%, #8534c7 100%);
+	background-color:#c7afdb;
+	border-radius:16px;
+	border:1px solid #b26de3;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Times New Roman;
+	font-size:18px;
+	padding:12px 27px;
+	text-decoration:none;
+	text-shadow:3px -2px 0px #9752cc;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #8534c7 5%, #c7afdb 100%);
+	background-color:#8534c7;
+    padding: 12px 27px;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+
+/* GATOS */
+
+
+/* celeste/blacky */
+.nombreG {
+    background-color: rgba(207, 207, 174, 0.301);
+    border-radius: 50%;
+    display: none;
+    position: absolute;
+    z-index: 100;
+     bottom: 20%;
+    right: 75%; 
+}
+.gatoimg:hover > .nombreG {
+    display: block;
+}
+
+        /*  queen/cloe */
+.nombreG2 {
+    background-color: rgba(207, 207, 174, 0.301);
+    border-radius: 50%;
+    display: none;
+    position: absolute;
+    z-index: 100;
+     bottom: 20%;
+    right: 45%; 
+}
+.gatoimg:hover > .nombreG2 {
+    display: block;
+}
+
+/* Pelusa/Nube */
+.nombreG3 {
+    background-color: rgba(207, 207, 174, 0.301);
+    border-radius: 50%;
+    display: none;
+    position: absolute;
+    z-index: 100;
+     bottom: 20%;
+    right: 15%; 
+}
+.gatoimg:hover > .nombreG3 {
+    display: block;
+}
+
+.gatos1 {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 5%;
+}
+
+
+
+div figure img{
+     border-radius: 50%;
+     transition: transform .3s ease;
+
+}
+
+div figure img:hover {
+    transform: scale(1.2);
+}
+
+
+
+figcaption {
+    transition: none;
+    font-family: 'DM Serif Text';
+    text-align: center;
+    padding-top: 10%;
+}
+
+
+/* MENÚ */
+
+.menu {
+    padding: 10%;
+    padding-bottom: 3%;
+
+}
+
+
+
+.letras_listas {
+    font-family: 'DM Serif Text';
+    font-size: 20px;
+
+}
+
+
+
+.ambos_menu {
+    padding-bottom: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* --TESTIMONIOS -- */
+.testimonios {
+    text-align: center;
+    
+}
+
+.nombre {
+    font-size: 15px;
+    font-family: 'DM Serif Text';
+    padding-bottom: 1%;
+
+}
+
+
+.caja {
+    font-size: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgb(195, 191, 223);
+    padding: 2%;
+    border-style: dashed;
+    color: rgb(56, 51, 95);
+    display: inline-block;
+
+}
+
+
+
+.comentario {
+    background-color: rgb(128, 125, 151);
+    padding: 20px;
+    font-size: medium;
+
+
+}
+
+
+.parent-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.div1-2 {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.div2-2 {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.div3-2 {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.div4-2 {
+    grid-area: 2 / 2 / 3 / 3;
+
+}
+
+
+/* CURSOS INDEX */
+.sec-curso{
+    margin-top: 10%;
+    background-color: antiquewhite;
+    border-style:double;
+}
+
+.boton-curso {
+	background-color:transparent;
+	border-radius:27px;
+	border:4px solid #913ead;
+	display:inline-block;
+	cursor:pointer;
+	color:#8a0b8a;
+	font-family:'DM Serif Text';
+	font-size:18px;
+	padding:16px 31px;
+    /* margin-left: 45%; */
+    margin: 2% 0% 1% 45% ;
+	text-decoration:none;
+	text-shadow:0px 0px 11px #3f1a69;
+}
+.boton-curso:hover {
+	background-color:transparent;
+    padding:16px 31px;
+}
+.boton-curso:active {
+	position:relative;
+	top:1px;
+}
+
+
+
+/* ----CURSOS */
+
+.intro-curso{
+    padding-left: 5%;
+    display:flex;
+    
+}
+
+.barista {
+    background: rgb(151, 136, 157);
+    background: linear-gradient(0deg, rgba(151, 136, 157, 1) 0%, rgba(241, 148, 123, 1) 100%);
+}
+
+.mod-cursada {
+    border-style: double;
+    text-align: center;
+    margin: 5%;
+    background-color: rgba(243, 186, 194, 0.616);
+    box-shadow: 2px 2px 14px rgba(0, 0, 0, 3.5);
+}
+
+.plan-titulo {
+    text-align: center;
+}
+
+.plan-estudio {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contenidos {
+    font-family: 'DM Serif Text';
+    font-size: 18px;
+    border: 10px;
+    border-style: groove;
+    padding: 3%;
+    margin-bottom: 5%;
+
+}
+
+.objetivos_contenidos {
+    border-bottom: solid 2px rgb(243, 186, 194);
+    width: 30%;
+    padding-top: 2%;
+}
+
+.final-curso{
+    display: flex;
+    flex-direction: row-reverse;
+    padding-left: 3%;
+    padding-bottom: 5%;
+    filter:saturate(2);
+}
+
+.anotarse {
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+
+}
+.boton:hover {
+    padding: 10%;
+    padding-top: 5%;
+ 
+    background-color: inherit;
+    background-image: url(../IMG/decoracion/boton.webp);
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: 75%;
+    
+}
+
+.boton {
+    text-decoration: none;
+    color: rgb(53, 29, 63);
+    font-family: 'DM Serif Text';
+    font-size: 18px;
+    padding: 10%;
+    padding-top: 5%;
+
+    background-image: url(../IMG/decoracion/boton.webp);
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: 75%;
+
+}
+
+
+
+/* ----CONTACTANOS */
+
+
+input {
+    font-family: 'DM Serif Text';
+    font-size: 15px;
+
+}
+
+textarea {
+    font-family: 'DM Serif Text';
+    font-size: 15px;
+
+}
+
+
+label {
+    text-align: center;
+    font-family: 'DM Serif Text';
+    font-size: 20px;
+}
+
+
+#texto_largo {
+    resize: none;
+    width: 70%;
+    height: 70px;
+}
+
+#apellido {
+    width: 50%;
+}
+
+#nombre {
+    margin-top: 5%;
+    margin-bottom: 3%;
+    width: 50%;
+}
+
+fieldset {
+    border: solid 4px rgb(62, 101, 151);
+    text-align: center;
+}
+
+.formulario {
+    display: flex;
+    justify-content: center;
+    padding-top: 10%;
+    padding-bottom: 10%;
+
+
+}
+
+form {
+    padding-left: 5%;
+}
+
+.datos_personales {
+
+    padding-bottom: 7%;
+    display: flex;
+    flex-direction: column;
+}
+
+legend span {
+    background-color: rgba(205, 92, 92, 0.644);
+    font-family: 'DM Serif Text';
+    font-size: 20px;
+    /* width: 5%; */
+
+}
+
+
+.mail {
+    margin-right: 20%;
+    margin-left: 20%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.texto-extenso {
+    padding-top: 7%;
+    padding-bottom: 10%;
+}
+
+
+
+.botones {
+    font-family: 'DM Serif Text';
+    font-size: 16px;
+    padding: 1%;
+     margin: 5%;
+    border-radius: 10%;
+    color: rgb(121, 71, 80);
+}
+
+.title_mapa {
+    display: flex;
+    flex-direction: column;
+}
+
+
+div iframe {
+   background-color: #3f1a69;
+   padding: 2px;
+   border-radius: 5%;
+}
+
+/* --FOOTER--*/
+
+
+ul li a:hover {
+    padding: 0;
+}
+
+footer {
+    background-color: rgba(151, 103, 111, 0.74);
+
+}
+
+.informacion {
+    display: inline-block;
+
+
+}
+
+footer ul li {
+    padding-top: 4%;
+    list-style: none;
+    font-family: 'DM Serif Text';
+}
+
+.mifoto {
+    border-radius: 0%;
+    margin-left: 50px;
+    margin-top: 10px;
+    border: 2px solid papayawhip;
+}
+
+.mis_datos {
+    float: right;
+    padding-top: 50px;
+    margin-left: 20px;
+
+}
+
+
+footer ul li img {
+    padding-right: 20px;
+}
+
+/* .prueba {
+    background-color:brown;
+    height: 363px;
+    width: 600px ;
+} */
